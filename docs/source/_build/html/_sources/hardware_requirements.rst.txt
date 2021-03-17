@@ -1,7 +1,0 @@
-.. _requirements:
-
-Hardware
-========
-
-Software
-========
