@@ -19,7 +19,8 @@ The release plan and major goals are the following:
 * v1.0-Beta.2: fixed loading frequency-based cubes issue (released on 10th April 2021)
 * v1.0-Beta.3: added ability to load and interact with large catalgoue (released on 7th July 2021)
 * v1.0-Beta.5: added ability to export sub-cubes and edit settings using a JSON config file (released on 8th October 2021)
-* **v1.0-Beta.6 (current release)**: added ability to load new cubes without exiting iDaVIE; Updated file browser to use system-default browser; added toaster notifications for information, warnings and errors  (released 18th February 2022)
+* v1.0-Beta.6: added ability to load new cubes without exiting iDaVIE; Updated file browser to use system-default browser; added toaster notifications for information, warnings and errors  (released 18th February 2022)
+* **v1.0-Beta.7 (current release)**: fixed memory leak, fixed behaviour of edited masks when viewing downsampled cubes, added ability to paint small cubes without cropping (released 20 July 2022)
 * v1.0: complete software and source code (release date TBC)
 
 Getting help
