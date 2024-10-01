@@ -6,7 +6,7 @@ In this section we describe what kinds of file can be ingested by iDaVIE and wha
 
 Inputs
 ------
-Standard Real*4 (32-bit) FITS cubes for both the data and the (optional) mask.  There should be three axes, as defined by NAXIS1, NAXIS2, and NAXIS3 in the header. If the third visual dimension is in NAXIS4 (e.g., some ASKAPP cubes), the user can choose which axis to use as the third (*z*) dimension. Multiple catalogs can also be loaded if in VOTable format.
+Standard Real*4 (32-bit) FITS cubes for both the data and the (optional) mask.  There should be three axes, as defined by NAXIS1, NAXIS2, and NAXIS3 in the header. If the third visual dimension is in NAXIS4 (e.g., some ASKAP cubes), the user can choose which axis to use as the third (*z*) dimension. Multiple catalogs can also be loaded if in VOTable format.
 
 Outputs
 -------
