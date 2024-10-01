@@ -79,5 +79,5 @@ Copyright (C) 2024 IDIA, INAF-OACT. This program is free software; you can redis
 
 Contact us
 ----------
- * `GitHub discussions<https://github.com/idia-astro/iDaVIE/discussions>`_
+ * `GitHub discussions <https://github.com/idia-astro/iDaVIE/discussions>`_
  * `IDIA vislab help <vislab@idia.ac.za>`_ (vislab@idia.ac.za)
