@@ -10,8 +10,8 @@ The development of the iDaVIE project is a joint effort from:
 
 * `The Inter-university Institute for Data Intensive Astronomy (IDIA) <https://www.idia.ac.za>`_
 * `The IDIA Visualisation Lab <https://vislab.idia.ac.za>`_
-* `Osservatorio Astrofisico di Catania, Istituto Nazionale di Astrofisica (INAF-OACT) <https://www.oact.inaf.it>`_
-* `Osservatorio Astronomico di Cagliari, Istituto Nazionale di Astrofisica (INAF-OACA) <http://www.oa-cagliari.inaf.it/>`_ – testing
+* `Osservatorio Astrofisico di Catania, Istituto Nazionale di Astrofisica (INAF-OACT) <https://www.oact.inaf.it/en/>`_
+* `Osservatorio Astronomico di Cagliari, Istituto Nazionale di Astrofisica (INAF-OACA) <https://www.oa-cagliari.inaf.it/index.php?set_language=1>`_ – testing
 
 .. raw:: html
 
