@@ -56,7 +56,7 @@ Acknowledgements
 
 * This project received support from the Italian National Institute for Astrophysics.
 
-* The team acknowledges the support from the broad astronomical community for testing the software and providing feedback.
+* The team acknowledges the support from the broad astronomical community for testing the software and providing feedback. In particular, we thank Thijs van der Hulst and Paolo Serra for their substantial contribution and continued involvement in the project.
 
 Notice
 ------
