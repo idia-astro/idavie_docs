@@ -48,11 +48,13 @@ Acknowledgements
 ----------------
 * The Inter-University Institute for Data Intensive Astronomy is a partnership of the University of Cape Town, the University of Pretoria, and the University of the Western Cape. 
 
-* This project received support from the National Research Foundation under the Research Career Advancement and South African Research Chair Initiative programs (SARChI).
+* This project received support from the South African Research Chairs Initiative of the Department of Science and Technology and National Research Foundation.
 
 * This project received support from the Italian Ministry of Foreign Affairs and International Cooperation (MAECI Grant Number ZA18GR02) and the South African NRF (Grant Number 113121) as part of the ISARP RADIOSKY2020 Joint Research Scheme.
 
 * This project received support from the South African Department of Science and Innovation’s National Research Foundation under the ISARP RADIOMAP Joint Research Scheme (DSI-NRF Grant Number 150551).
+
+* This project received support from the Italian National Institute for Astrophysics.
 
 * The team acknowledges the support from the broad astronomical community for testing the software and providing feedback.
 
