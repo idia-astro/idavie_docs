@@ -19,6 +19,7 @@ Prerequisites
 
   - Installing a Unity Editor will automatically install the Visual Studio Installer if a version of Visual Studio isn't installed yet, and run the installer once the Unity Editor install is completed.
   - On the screen that comes up, select the `Desktop development with C++` workload on the left.
+    
     .. raw:: html
 
        <img src="_static/Build_VisualStudioInstall_WorkloadSelect.png"
