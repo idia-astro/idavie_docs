@@ -23,5 +23,6 @@ iDaVIE: immersive Data Visualisation Interactive Explorer
    contribute.rst
    future.rst
    build.rst
+   develop.rst
    about.rst
    multidisciplinary.rst
