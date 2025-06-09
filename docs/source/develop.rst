@@ -10,23 +10,26 @@ Before developing for iDaVIE, we strongly recommend that, in addition to the ste
 Install a code editor
 ---------------------
 Unity will require the installation of `Visual Studio <https://visualstudio.microsoft.com/>`_ as part of its installation, since that provides the compiler and libraries for the C# aspects of Unity. While it can serve as an IDE, we do not recommend it due to the heavy performance load it demands when in use. Instead, we recommend the following IDEs:
+
   - `Jetbrains <https://www.jetbrains.com/rider/>`_
   - `VSCode <https://code.visualstudio.com/>`_
     
 They are both fully functional, and considerably more lightweight than Visual Studio. In addition, both have good integration with the Unity Editor to allow for debugging iDaVIE while it is running. Consult the following resources on how to set up debugging a Unity project in the respective IDEs:
+
   - `Debugging Unity Applications with Jetbrains <https://www.jetbrains.com/help/rider/Debugging_Unity_Applications.html>`_
   - `VSCode Tools for Unity <https://marketplace.visualstudio.com/items?itemName=visualstudiotoolsforunity.vstuc>`_
 
 Set up UnityYamlMerge
 ---------------------
 To facilitate the merging of separate branches that include merge conflicts in scene (``*.unity``) files in iDaVIE, Unity provides a mergetool called UnityYamlMerge. This requires a few set up steps before it can be used.
+
   1. First, the iDaVIE repo should be told to use UnityYamlMerge as the mergetool. Add the following lines to the ``.git/commit`` file. Note the escaped slash ``\\`` for folder divisors -- it will not work otherwise.
   ::
-    ``[mergetool "UnityYamlMerge"]
+    [mergetool "UnityYamlMerge"]
         cmd = '<path\\to\\Unity>\\Unity\\2021.3.47f1\\Editor\\Data\\Tools\\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
         trustExitCode = false
     [merge]
-        tool = UnityYamlMerge``
+        tool = UnityYamlMerge
   2. In the folder ``<path\to\Unity>\Unity\2021.3.47f1\Editor\Data\Tools``, open the ``mergespecfile.txt`` text file. This file contains the fallback mergetools if UnityYamlMerge cannot resolve the conflicts or filetypes. Here we recommend VSCode as the fallback. Add the following lines to the ``mergespecfile.txt`` file. Note that ``code`` is likely in the system PATH if VSCode is installed, otherwise the path of the ``code.exe`` executable is required.
   ::
     ``# VSCode
