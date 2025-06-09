@@ -38,6 +38,7 @@ To facilitate the merging of separate branches that include merge conflicts in s
 Merging procedure
 -----------------
 Merging two branches of a Unity project can be problematic and very time consuming if scene files were changed in both branches. We list the steps to follow when merging two branches.
+
   1. Switch to the target branch of iDaVIE with ``git switch <target>``.
   2. Merge with ``git merge --no-commit <remote>``, where remote is the branch to be merged into the current branch.
   3. If any conflict in script files occur, resolve using your mergetool of choice (we recommend VSCode or a derivative thereof).
