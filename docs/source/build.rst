@@ -23,7 +23,7 @@ Prerequisites
     .. raw:: html
 
        <img src="_static/Build_VisualStudioInstall_WorkloadSelect.png"
-         style="width:30%;height:auto;"
+         style="width:60%;height:auto;"
          class="center">
 
   - On the right, select only the MSVC v142 compiler, the Windows X SDK (where X is your operating system), and the C++ CMake Tools for Windows components.
@@ -31,7 +31,7 @@ Prerequisites
     .. raw:: html
 
        <img src="_static/Build_VisualStudioInstall_ComponentSelect.png"
-         style="width:50%;height:auto"
+         style="width:40%;height:auto"
          class="center">
 
   - Click install and wait for it to complete.
