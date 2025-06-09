@@ -12,31 +12,56 @@ Prerequisites
 #. Install Unity
 
   * Download `Unity Hub for Windows <https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe>`_ from Unity's website and install it.
-  * From the Unity Hub, install Unity version :literal:`2021.3.xf1`, where :literal:`x` is the highest number available.
-  * For now, we will continue using Unity version :literal:`2021.3.xf1`. We will investigate upgrading Unity versions at major releases.
+  * From the Unity Hub, go the the Installs tab and click Add. Select Unity version ``2021.3.xf1`` (LTS – long term support), where x is the highest number available. Click next, leave the default extras, click next again. Accept the licence and install.
+  * Make note of where the Unity Editor executable is installed – by default, this is at ``C:\Program Files\Unity\2021.3.xf1\Editor\Unity.exe``. Make sure of the version number.
+
+#. Complete Visual Studio install
+
+  * Installing a Unity Editor will automatically install the Visual Studio Installer if a version of Visual Studio isn't installed yet, and run the installer once the Unity Editor install is completed.
+  * On the screen that comes up, select the `Desktop development with C++` workload on the left.
+	  .. raw:: html
+
+        <img src="_static/Build_VisualStudioInstall_WorkloadSelect.png"
+             style="width:30%;height:auto;"
+             class="center">
+
+  * On the right, select only the MSVC v142 compiler, the Windows X SDK (where X is your operating system), and the C++ CMake Tools for Windows components.
+    .. raw:: html
+
+        <img src="_static/Build_VisualStudioInstall_ComponentSelect.png"
+             style="width:50%;height:auto"
+             class="center">
+
+  * Click install and wait for it to complete.
 
 #. Install CMake
 
-  * Download `CMake for Windows <https://cmake.org/download/>`_ and install it.
+  * Download `CMake for Windows <https://cmake.org/download/>`_ and install it. Choose the installer binary distribution for Windows (almost certainly x64) and run it. Follow the instructions provided by the installer.
   * Make sure you can run :literal:`cmake` from the PowerShell terminal (or command line).
     
     * :literal:`cmake --version` is a good test.
 
 #. Install vcpkg
 
-  * Download `vcpkg <https://github.com/microsoft/vcpkg>`_ and install it.
+  * Download `vcpkg <https://github.com/microsoft/vcpkg>`_ and install it, following the instructions provided on the repository.
+  * Make sure to run the ``vcpkg integrate install`` command from the PowerShell terminal once the install has completed.
   * Make sure to note the path to the vcpkg root folder, found at :literal:`C:\\\\vcpkg` for default installations.
+
+#. Install Steam and SteamVR
+  * To use iDaVIE with any VR headset, we use Steam's SteamVR application as a bridge.
+  * Download the `Steam installer <https://store.steampowered.com/about/>`_ and install it. Create a Steam account if you do not already have one (no cost to create).
+  * Install `SteamVR <https://store.steampowered.com/app/250820/SteamVR/>`_ by clicking the "Play Game" button on the SteamVR page.
 
 #. Download iDaVIE source code
 
-  * Download the iDaVIE source code from the `GitHub repository <https://github.com/idia-astro/idia_unity_vr>`_.
-  * (Optional) You can do this through a Git client, such as `GitHub Desktop <https://desktop.github.com/download/>`_ or `Git Extensions <https://github.com/gitextensions/gitextensions/releases/latest>`_.
+  * Download the iDaVIE source code from the `GitHub repository <https://github.com/idia-astro/iDaVIE>`_.
+  * (Optional) You can do this through a Git client, such as `GitHub Desktop <https://desktop.github.com/download/>`_ or `Git Extensions <https://github.com/gitextensions/gitextensions/releases/latest>`_, both of which will require `Git <https://git-scm.com/>`_ to be installed.
 
 #. Run the configuration script
 
   * Open a PowerShell terminal in the iDaVIE root folder
-  * Run the :literal:`configure.ps1` script. This script takes two arguments: the vcpkg root folder, and the Unity executable. The default assumption is positional arguments.
-  * For example: :literal:`.\configure.ps1 "C:\vcpkg" "C:\Program Files\Unity\2021.3.xf1\Editor\Unity.exe"`
+  * Run the :literal:`Configure.ps1` script. This script takes two arguments: the vcpkg root folder path (as mentioned in step 4), and the Unity executable path (as mentioned in step 1). The default assumption is positional arguments.
+  * For example: :literal:`.\Configure.ps1 "C:\vcpkg" "C:\Program Files\Unity\2021.3.xf1\Editor\Unity.exe"`
   * (Optional) You can specify the vcpkg root with the :literal:`-v` or :literal:`-vcpkg` flags.
   * (Optional) You can specify the Unity executable with :literal:`-u` or :literal:`-unity` flags.
   * (Optional) For example: :literal:`.\configure.ps1 -v "C:\vcpkg" -u "C:\Program Files\Unity\2021.3.xf1\Editor\Unity.exe"`
@@ -44,6 +69,8 @@ Prerequisites
 #. Generate SteamVR actions
 
   * Open iDaVIE in the Unity Editor.
+  * From the Unity Hub, select the ``Add`` button and click ``Add project from disk`` (only necessary the first time). Navigate to where you downloaded the iDaVIE source code in step 5 and select the iDaVIE folder.
+  * Once the project is opened, navigate to ``Assets/Scenes/`` in the Editor's navigation window (at the bottom) and double-click on the ui.unity file.
   * Under **Window->SteamVR Input**, click the **Save and generate** button.
   .. raw:: html
 
@@ -79,3 +106,8 @@ Prerequisites
              style="width:65%;height:auto;"
              class="center">
   * Click the **Build** button and select your destination folder.
+
+Troubleshooting
+---------------
+  * If you get an error about PowerShell permissions when attempting to run the configuration script, you might have to set your PowerShell permissions to Unrestricted. Use the following command: ``Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser``.
+  * If you get errors regarding ``nmake`` not being found when running the configuration script, make sure that you installed the relevant C++ Build components when you install Visual Studio as required by the Unity install.
