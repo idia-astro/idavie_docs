@@ -1,17 +1,25 @@
 .. _videoMaker:
 
+Recording videos in iDaVIE
+==========================
+
+Recording video positions in VR
+-------------------------------
+
+Lorem ipsum
+
+----
+
 IDVS Scripting Language Reference
-=================================
+---------------------------------
 
 **Version:** 1.0  
 **Purpose:**  
 The IDVS scripting language is used to control video recordings — defining camera positions, movements, and global recording settings.  
 Each line in an IDVS script defines one instruction or configuration.
 
-----
-
 Table of Contents
------------------
+^^^^^^^^^^^^^^^^^
 
 1. `Basic Rules`_  
 2. `Script Structure`_  
@@ -27,10 +35,8 @@ Table of Contents
 8. `Example Full Script`_  
 9. `Summary of Commands`_
 
-----
-
 Basic Rules
-------------
+^^^^^^^^^^^
 
 * Each instruction must be written **on its own line**.  
 * **Blank lines** are allowed (ignored).  
@@ -47,10 +53,8 @@ Basic Rules
    Start at introPosition
    Wait 3 seconds
 
-----
-
 Script Structure
-----------------
+^^^^^^^^^^^^^^^^
 
 An IDVS script generally contains three types of statements:
 
@@ -66,10 +70,9 @@ An IDVS script generally contains three types of statements:
 | **Settings**              | Configure global video options (logo placement, quality).    |
 +---------------------------+--------------------------------------------------------------+
 
-----
 
 Position Declarations
----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 Define a named camera position and orientation. **Note**: these positions will almost always be exported from the iDaVIE video mode.
 
@@ -97,13 +100,11 @@ Define a named camera position and orientation. **Note**: these positions will a
 - Parentheses ``()`` can be used instead of square brackets ``[]``.  
 - Redeclaring an alias overwrites the old one (warning issued).
 
-----
-
 Commands
---------
+^^^^^^^^
 
-Start
-^^^^^
+*Start*
+_______
 
 Sets the initial camera position.
 
@@ -119,10 +120,8 @@ Sets the initial camera position.
 
    Start at p1
 
-----
-
-Wait
-^^^^
+*Wait*
+______
 
 Pauses the camera movement for a given duration.
 
@@ -138,10 +137,8 @@ Pauses the camera movement for a given duration.
 
    Wait 2 seconds
 
-----
-
-Move
-^^^^
+*Move*
+______
 
 Moves the camera from the current position to a defined destination.
 
@@ -168,10 +165,8 @@ Moves the camera from the current position to a defined destination.
 - Unknown method → *“Invalid move method”*  
 - Unknown position alias → *“Invalid position alias”*
 
-----
-
-Rotate
-^^^^^^
+*Rotate*
+________
 
 Rotates the camera around a defined position.  
 Several variants are supported for specifying timing and rotation behavior.
@@ -198,10 +193,8 @@ Several variants are supported for specifying timing and rotation behavior.
    Rotate around p2 2 times orbit 4 seconds
    Rotate around p5 2 times turn 1 seconds orbit 3 seconds
 
-----
-
 Settings
---------
+^^^^^^^^
 
 Settings modify global video parameters.
 
@@ -239,10 +232,8 @@ Settings modify global video parameters.
 - Invalid logo position → *“Invalid logo position value”*  
 - Invalid number → *“Format exception”*
 
-----
-
 Error Handling
---------------
+^^^^^^^^^^^^^^
 
 Errors encountered during parsing are reported in the iDaVIE log with the line number and a description.
 
@@ -254,18 +245,14 @@ Errors encountered during parsing are reported in the iDaVIE log with the line n
 
 Warnings (e.g., redefined aliases) do not stop execution.
 
-----
-
 Tips and Best Practices
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 * Define all positions **before** using them.  
 * Use **descriptive aliases** like ``intro``, ``outro``, or ``focusPoint``. 
 
-----
-
 Example Full Script
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: text
 
@@ -309,7 +296,7 @@ Example Full Script
 ----
 
 Summary of Commands
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 +-------------+-------------------------------------------------------------+-----------------------------------------------+
 | **Command** | **Syntax**                                                  | **Purpose**                                   |
@@ -327,4 +314,7 @@ Summary of Commands
 | **Setting** | ``<name>: <value>``                                         | Set a global configuration                    |
 +-------------+-------------------------------------------------------------+-----------------------------------------------+
 
-----
+Video Maker Backend
+-------------------
+
+Lorem ipsum, Mayhew, figure out what to copy from the discussion page to here.

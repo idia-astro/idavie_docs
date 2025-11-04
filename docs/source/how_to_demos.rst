@@ -86,6 +86,10 @@ iDaVIE allows the user to investigate the basic statistics of the cube and to cr
          style="width:560px; height:315px;">
     <div style="height: 20px;"></div>
 
+Create a movie using iDaVIE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+iDaVIE provides an extensive video recording mode, with more detail available at :ref:`videoMaker`.
+
 Create a movie (using external tools)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
