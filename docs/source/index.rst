@@ -21,6 +21,7 @@ iDaVIE: immersive Data Visualisation Interactive Explorer
    how_to_interac.rst
    how_to_demos.rst
    videoMaker.rst
+   idvs_ref.rst
    contribute.rst
    future.rst
    build.rst
