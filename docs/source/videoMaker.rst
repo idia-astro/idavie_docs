@@ -3,6 +3,20 @@
 Recording videos in iDaVIE
 ==========================
 
+With iDaVIE you can create smooth videos of your data using iDaVIE Video Scripts (IDVS).
+This page details each step of this process: recording video positions in VR, to editing the IDVS generated from this, to loading this script in the desktop interface and creating the video.
+Before this, the requirements for using the video feature are discussed.
+
+
+Requirements
+------------
+
+To create videos, iDaVIE requires an `FFmpeg <https://github.com/FFmpeg/FFmpeg>` executable. 
+You can download a pre-compiled FFmpeg executable from Windows `here <https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z>`.
+Once you have downloaded the zipped files, extract them and store it in a location that you will remember, for example the Documents folder.
+iDaVIE will ask you to locate the FFmpeg executable later.
+
+
 Recording video positions in VR
 -------------------------------
 
@@ -45,9 +59,43 @@ Summary of Commands
 
 Previewing and Exporting videos
 -------------------------------
-Lorem ipsum pretty annotated pictures.
 
-Video Maker Backend
--------------------
+The interface for previewing and exporting IDVS to videos can be found in the RENDER tab of the iDaVIE desktop GUI.
 
-Lorem ipsum, Mayhew, figure out what to copy from the discussion page to here, if any.
+.. raw:: html
+
+    <img src="_static/GUI/VideoMaker_RENDER_IDVS_annotated.png"
+         style="width:100%;height:auto;">
+
+1) The name of the IDVS currently loaded.
+2) Button to find and load an IDVS, opens a file explorer.
+3) Button to reload the current IDVS from disk. This is useful when making iterative changes to the current IDVS.
+4) Button to play the video in "Preview" mode. The video will not be exported to a file, but performance is better than exporting.
+5) Button to "Export" the video to an mp4 file in :literal:`Output/Video`. A preview of the video is also show, however this preview may not be in real-time (depending on the frame-rate of the exported video) and performance will not be as good as Preview mode.
+
+If you press the Preview button, the video will be previewed in the GUI:
+
+.. raw:: html
+
+    <img src="_static/GUI/VideoMaker_RENDER_playing_annotated.png"
+         style="width:100%;height:auto;">
+
+1) View of the video being previewed. Replaces the usual VR View.
+2) Text indicates "Preview" mode. If the Export button was pressed, this would display "Export Video".
+3) Button to "Pause" the video preview. If pressed the video preview will be paused, and may be resumed by pressing the "Resume" button that replaces this.
+4) Button to "Stop" the video preview.
+5) The progress of the video. The text indicates if the video preview is "Playing" or if it is "Paused".
+6) A slider to adjust the preview quality (resolution) of the video, provided in case of poor performance during preview. With the slider to the right, the video will be previewed at the full resolution as specified by the IDVS. With the slider towards the left, the video will preview at a lower resolution than this. The slider is only available during "Preview" mode and the slider position will not affect the output resolution of the video.
+
+When you are satisfied with the video preview, you may wish to export the video.
+To do this, press the Export button.
+The first time you press the Export button a file dialogue will pop-up asking you to "Open the FFmpeg executable".
+Navigate to the file location where you stored the FFmpeg folder, select the :literal:`bin/ffmpeg.exe` file.
+
+.. raw:: html
+
+    <img src="_static/GUI/VideoMaker_RENDER_File_FFmpeg_blurred.png"
+         style="width:100%;height:auto;">
+
+
+The exported video can be found in :literal:`Output/Video`, and will have the same filename as the IDVS with an additional time-stamp at the end for when the video was made.
