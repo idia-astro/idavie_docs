@@ -349,6 +349,43 @@ The Colourmap window displays the available colour maps that the user can apply 
 1) Click the arrow button to apply the colour map.
 2) Use the scrolls buttons to scroll through the available colour maps. The list can also be scrolled by moving the thumbstick up and down while the laser pointer is hovering over the list.
 
+.. _videoMakerUI:
+
+Videomaker Window
+^^^^^^^^^^^^^^^^^
+
+The Videomaker window provides access to tools used for generating a list of perspectives to be used when generating a video.
+
+.. raw:: html
+
+     <img src="_static/GUI/VideoMakerModeMenu_UI.png"
+          style="width:40%;height:auto;">
+
+1) Toggle whether the recorded perspective are from the head position, or from the cursor position. The button image changes to show the current mode.
+2) Open the :ref:`videomakerlistui`, showing the list of perspectives created in this session.
+3) Export the list of perspectives to a new :literal:`.idvs` script file. This file is saved under :literal:`Output/VideoScripts/<Datafile>_VideoScript_yyyyMMdd_Hmmss.png`, where :literal:`<Datafile>` is the file name of the loaded data cube, and :literal:`yyyyMMdd_Hmmss` is the timestamp when the file is saved.
+4) Exit video recording mode and close this menu.
+
+.. _videoMakerListUI:
+
+Videomaker Perspective List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Videomaker list of points displays all the perspectives recorded in the current session, allowing users to revisit or delete perspectives as they wish.
+
+.. raw:: html
+
+     <img src="_static/GUI/VideoMakerPointList_UI.png"
+          style="width:40%;height:auto;">
+
+1) Each point is either a head position, or a cursor position.
+2) Each point has a default name, of the form :literal:`pN`, where N is the index of the point in the list.
+3) Each point has a location relative to the data cube, as well as a rotation. Cursor locations have a rotation of (0, 0, 0).
+4) Teleport the cube to reflect the perspective as stored in this head position.
+5) Highlight this cursor position by drawing a cyan box around the stored location in the data cube. Click again to remove.
+6) Remove this point from the list of perspectives.
+
+.. _cursorinfo:
 
 Controller Cursor Info
 ----------------------

@@ -65,14 +65,7 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-# html_logo = "./_static/vislab_logo.png"
-# html_logo = "./_static/vislab_logo_alt.png"
-# html_logo = "./_static/iDaVIElogo_V3.jpg"
-# html_logo = "./_static/iDaVIElogo_V3_NoCorn.png"
 html_logo = "./_static/iDaVIElogo_New.png"
-# html_logo = "./_static/iDaVIElogo_V4_transbg.png"
-# html_logo = "./_static/iDaVIElogo_V4.jpg"
-# html_logo = "./_static/iDaVIElogo_V5.jpg"
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
