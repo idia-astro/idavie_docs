@@ -31,17 +31,21 @@ The FILE tab is what the user will see when iDaVIE is opened. This tab includes 
 
 .. raw:: html
 
-     <img src="_static/Desktop1.png"
+     <img src="_static/GUI/Desktop1.png"
           style="width:100%;height:auto;">
 
-1) Button to display the desktop :literal:`VR View`. This is the view that the user will see when the VR headset is worn. VR View is activated by default upon loading the cube.
-2) Button to display more iDaVIE information. This includes the version of the software, the authors, and the license.
-3) Button to exit iDaVIE.
-4) Click this Browse button to open the file explorer and select the cube file to load.
-5) The header information for the selected data cube will be displayed here.
-6) Optionally, you can click the Browse button to open the file explorer and select a mask file to load. **NOTE:** the mask must have the exact same dimensions of the cube loaded.
-7) Click the Load button to start the rendering of the cube. A loading bar will appear at the bottom of the window to indicate load progress. Once this is done, the user can put on the headset and start exploring the cube. 
-
+#. The version of this build of iDaVIE. Useful when reporting errors or bugs.
+#. Button to display the desktop :literal:`VR View`. This is the view that the user will see when the VR headset is worn. VR View is activated by default upon loading the cube.
+#. Button to display more iDaVIE information. This includes the version of the software, the authors, and the license.
+#. Button to exit iDaVIE.
+#. Click this Browse button to open the file explorer and select the cube file to load.
+#. This dropdown menu allows you to select which HDU in the FITS file the data is saved in. This will only appear if the file contains more than one HDU.
+#. The header information for the selected data cube (and HDU, if relevant) will be displayed here.
+#. Optionally, this checkbox can be checked if you desire to load only a portion of the data file. This will open the section below.
+#. These input fields specify the bounds of the subcube to be loaded from the data file. Each axis can have separate bounds specified.
+#. Optionally, you can click the Browse button to open the file explorer and select a mask file to load. **NOTE:** the mask must have the exact same dimensions of the cube loaded.
+#. Click the Load button to start the rendering of the cube. A loading bar will appear at the bottom of the window to indicate load progress. Once this is done, the user can put on the headset and start exploring the cube. 
+#. This message displays the status of the loading process, useful for when loading a large cube.
 
 RENDER tab
 ^^^^^^^^^^
@@ -50,7 +54,7 @@ The RENDER tab includes options to tune the rendering parameters of the cube.
 
 .. raw:: html
 
-     <img src="_static/Desktop2.png"
+     <img src="_static/GUI/Desktop2.png"
           style="width:100%;height:auto;">
 
 1) Dropdown menu to set a precalculated size for the cube side lengths. The default is :literal:`X=Y=Z`, setting the cube to 1x1x1 size. The other option of :literal:`X=Y` sets the X and Y lengths of the cube equal (to be a square) and sets the Z length to have the same ratio as the X and Z lengths of the data cube. 
@@ -68,7 +72,7 @@ The STATS tab includes options to check and interact with some basic data statis
 
 .. raw:: html
 
-     <img src="_static/Desktop3.png"
+     <img src="_static/GUI/Desktop3.png"
           style="width:100%;height:auto;">
 
 
@@ -89,7 +93,7 @@ The SOURCES tab includes options to load a catalog of sources. The catalog can b
 
 .. raw:: html
 
-     <img src="_static/Desktop4.png"
+     <img src="_static/GUI/Desktop4.png"
           style="width:100%;height:auto;">
 
 1) Click this Browse button to open the file explorer and select the catalog file to load.
@@ -111,7 +115,7 @@ The DEBUG tab includes a readout of the debug log for the current session. This 
 
 .. raw:: html
      
-          <img src="_static/Desktop5.png"
+          <img src="_static/GUI/Desktop5.png"
                style="width:100%;height:auto;">
 
 
@@ -126,7 +130,7 @@ After loading a file in the FILE tab, the user can put on the headset. The first
 
    .. raw:: html
 
-       <img src="_static/VR-first-view.png"
+       <img src="_static/GUI/VR-first-view.png"
             style="width:100%;height:auto;">
 
    The axes are RGB colour-coded as (for example):
@@ -143,7 +147,7 @@ The Quick menu is the main menu the user will interact with in the VR environmen
 
 .. raw:: html
      
-          <img src="_static/QuickMenu.png"
+          <img src="_static/GUI/QuickMenu.png"
                style="width:50%;height:auto;">
 
 1) Open the :ref:`sourcelist`.
@@ -151,11 +155,11 @@ The Quick menu is the main menu the user will interact with in the VR environmen
 3) Open the :ref:`voicecommands`.
 4) Open the :ref:`settings`.
 5) Open the :ref:`colourmap`.
-6) Open the :ref:`maskpainting` and start mask painting mode.
-7) Save the mask to file.
-8) Toggle to crop the cube to the selected region or uncrop the cube if already cropped.
-9) Toggle the mask application options (voice command analogue in brackets). Options are to subtract the unmasked regions ("mask on"), subtract the masked regions ("mask invert"), show the mask by itself ("mask isolate"), or show the cube without the mask ("mask off").
-10) Take a screenshot of the current view.
+6) Toggle to crop the cube to the selected region or uncrop the cube if already cropped.
+7) Toggle the mask application options (voice command analogue in brackets). Options are to subtract the unmasked regions ("mask on"), subtract the masked regions ("mask invert"), show the mask by itself ("mask isolate"), or show the cube without the mask ("mask off").
+8) Take a screenshot of the current view.
+9) Save the mask to file.
+10) Open the :ref:`maskpainting` and start mask painting mode.
 11) Exit iDaVIE.
 
 .. _maskpainting:
@@ -169,7 +173,7 @@ In the mask painting mode, the user can paint the mask using the controllers. Th
 
 .. raw:: html
      
-          <img src="_static/PaintMenu.png"
+          <img src="_static/GUI/PaintMenu.png"
                style="width:50%;height:auto;">
 
 1) Activate additive brush mode. This allows the user to add to the mask by painting with the primary controller. The value of the mask is set to the current Source ID that will be indicated at the top of the menu.
@@ -198,7 +202,7 @@ This window displays the three types of sources that can be used with iDaVIE: ma
 
 .. raw:: html
      
-          <img src="_static/SourcesMenu.png"
+          <img src="_static/GUI/SourcesMenu.png"
                style="width:100%;height:auto;">
 
 1) Button to select the indicated source.
@@ -232,7 +236,7 @@ The Source Info window displays the information of the selected source. This inc
 
 .. raw:: html
      
-          <img src="_static/SourceInfo.png"
+          <img src="_static/GUI/SourceInfo.png"
                style="width:50%;height:auto;">
 
 1) The number of the source in its list.
@@ -254,7 +258,7 @@ The Settings window allows the user to adjust the rendering settings of the cube
 
 .. raw:: html
      
-          <img src="_static/SettingsMenu.png"
+          <img src="_static/GUI/SettingsMenu.png"
                style="width:100%;height:auto;">
 
 1) Arrow buttons to change the applied colour map of the cube.
@@ -282,7 +286,7 @@ The Plots window gives the user access to useful 2D plots calculated in realtime
 
 .. raw:: html
      
-          <img src="_static/PlotsMenu.png"
+          <img src="_static/GUI/PlotsMenu.png"
                style="width:100%;height:auto;">
 
 
@@ -314,7 +318,7 @@ The Keypad is a virtual keypad that can be used to input custom values for the m
 
 .. raw:: html
      
-          <img src="_static/Keypad.png"
+          <img src="_static/GUI/Keypad.png"
                style="width:30%;height:auto;">
 
 
@@ -327,7 +331,7 @@ The Voice Command window displays the available voice commands that the user can
 
 .. raw:: html
      
-          <img src="_static/VoiceCommandMenu.png"
+          <img src="_static/GUI/VoiceCommandMenu.png"
                style="width:40%;height:auto;">
 
 1) Click the arrow button to manually activate the voice command.
@@ -335,15 +339,15 @@ The Voice Command window displays the available voice commands that the user can
 
 .. _colourmap:
 
-Colourmap Winow
-^^^^^^^^^^^^^^^
+Colourmap Window
+^^^^^^^^^^^^^^^^
 
 The Colourmap window displays the available colour maps that the user can apply to the cube. iDaVIE makes use of the colourmaps available in the matplotlib Python library. See the `matplotlib documentation <https://matplotlib.org/2.2.4/gallery/color/colormap_reference.html>`_ for more information on the available colour maps.
 
 
 .. raw:: html
      
-          <img src="_static/ColorMenu.png"
+          <img src="_static/GUI/ColorMenu.png"
                style="width:40%;height:auto;">
 
 1) Click the arrow button to apply the colour map.
@@ -394,21 +398,22 @@ The 3D cursor will provide information about the current voxel under the cursor.
 
 .. raw:: html
      
-          <img src="_static/CursorInfo.png"
+          <img src="_static/GUI/CursorInfo.png"
                style="width:100%;height:auto;">
 
 1) The cursor itself is a small sphere that will follow the controller position. When inside the cube, individual voxels will be highlighted by the cursor with a green outline. This indicates what voxel the information will be displayed for.
-2) WCS sky coordinates of the voxel under the cursor. This will be calculated using information from the cube header.
-3) WCS spectral coordinate of the voxel under the cursor. This will be calculated using information from the cube header.
-4) Image coordinates of the voxel under the cursor. This is the voxel index in the cube and is 1-indexed.
-5) Data value of the voxel under the cursor. The unit is determined by the cube header.
-6) The alternate spectral coordinate of the voxel under the cursor. This is calculated using the rest frequency of the cube and the spectral coordinate.
-7) The red microphone icon indicates that voice commands are currently inactive. This could be due to the user being in **push-to-talk** mode without the talk button (secondary thumb button on primary controller) pressed or the iDaVIE window is not in focus.
-8) iDaVIE window focus indicator. This will be present if the iDaVIE window is not in focus. This can be resolved by clicking on the iDaVIE window on the desktop. If this is present, voice commands will not be active.
-9) The Source ID of the voxel under the cursor. This will not be visible if the voxel is not part of a mask source. 
-10) The green microphone icon indicates that voice commands are currently active. This will be present when the user is in **push-to-talk** mode and the talk button is pressed.
-11) While in threshold adjustment mode, the Min value is displayed here. This is the minimum data value both where the colourmap will start and where the alpha value will be 0.
-12) While in threshold adjustment mode, the Max value is displayed here. This is the maximum data value both where the colourmap will end and where the alpha value will be 1.
-13) While in selection mode, the Region shows the voxel dimensions of the selected region.
-14) While in selection mode, the Angle shows the calculated angle across the sky of the selected region. The angle will be from corner to corner of the selection box (start to end).
-15) While in selection mode, the Depth shows the calculated depth of the selected region. This is the distance between the start and end of the box in the Z direction.
+2) WCS sky coordinates of the voxel under the cursor. This is calculated using information from the cube header.
+3) WCS spectral coordinate of the voxel under the cursor. This is calculated using information from the cube header.
+4) World coordinates of the voxel under the cursor. This is the voxel index of the data displayed, and is 1-indexed. This is only equivalent to the index in the data if the data loaded has the same left corner as the full cube.
+5) Data coordinates of the voxel under the cursor. This is the voxel index in the cube and is 1-indexed. This will only be present if a subcube is loaded.
+6) Data value of the voxel under the cursor. The unit is determined by the cube header.
+7) The alternate spectral coordinate of the voxel under the cursor. This is calculated using the rest frequency of the cube and the spectral coordinate.
+8) The red microphone icon indicates that voice commands are currently inactive. This could be due to the user being in **push-to-talk** mode without the talk button (secondary thumb button on primary controller) pressed or the iDaVIE window is not in focus.
+9) iDaVIE window focus indicator. This will be present if the iDaVIE window is not in focus. This can be resolved by clicking on the iDaVIE window on the desktop. If this is present, voice commands will not be active.
+10) The Source ID of the voxel under the cursor. This will not be visible if the voxel is not part of a mask source. 
+11) The green microphone icon indicates that voice commands are currently active. This will be present when the user is in **push-to-talk** mode and the talk button is pressed.
+12) While in threshold adjustment mode, the Min value is displayed here. This is the minimum data value both where the colourmap will start and where the alpha value will be 0.
+13) While in threshold adjustment mode, the Max value is displayed here. This is the maximum data value both where the colourmap will end and where the alpha value will be 1.
+14) While in selection mode, the Region shows the voxel dimensions of the selected region.
+15) While in selection mode, the Angle shows the calculated angle across the sky of the selected region. The angle will be from corner to corner of the selection box (start to end).
+16) While in selection mode, the Depth shows the calculated depth of the selected region. This is the distance between the start and end of the box in the Z direction.
