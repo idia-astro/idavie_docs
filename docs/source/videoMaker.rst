@@ -11,9 +11,9 @@ Before this, the requirements for using the video feature are discussed.
 Requirements
 ------------
 
-To create videos, iDaVIE requires an `FFmpeg <https://github.com/FFmpeg/FFmpeg>` executable. 
-You can download a pre-compiled FFmpeg executable from Windows `here <https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z>`.
-Once you have downloaded the zipped files, extract them and store it in a location that you will remember, for example the Documents folder.
+To create videos, iDaVIE requires an `FFmpeg <https://github.com/FFmpeg/FFmpeg>`_ executable. 
+You can download a pre-compiled FFmpeg executable from Windows `here <https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z>`_.
+Once you have downloaded the zipped files, extract them and store it in a location that you will remember, for example, your Documents folder.
 iDaVIE will ask you to locate the FFmpeg executable later.
 
 
@@ -64,8 +64,8 @@ The interface for previewing and exporting IDVS to videos can be found in the RE
 
 .. raw:: html
 
-    <img src="_static/GUI/VideoMaker_RENDER_IDVS_annotated.png"
-         style="width:100%;height:auto;">
+   <img src="_static/GUI/VideoMaker_RENDER_IDVS_annotated.png"
+        style="width:100%;height:auto;">
 
 1) The name of the IDVS currently loaded.
 2) Button to find and load an IDVS, opens a file explorer.
@@ -77,8 +77,8 @@ If you press the Preview button, the video will be previewed in the GUI:
 
 .. raw:: html
 
-    <img src="_static/GUI/VideoMaker_RENDER_playing_annotated.png"
-         style="width:100%;height:auto;">
+   <img src="_static/GUI/VideoMaker_RENDER_playing_annotated.png"
+        style="width:100%;height:auto;">
 
 1) View of the video being previewed. Replaces the usual VR View.
 2) Text indicates "Preview" mode. If the Export button was pressed, this would display "Export Video".
@@ -89,13 +89,12 @@ If you press the Preview button, the video will be previewed in the GUI:
 
 When you are satisfied with the video preview, you may wish to export the video.
 To do this, press the Export button.
-The first time you press the Export button a file dialogue will pop-up asking you to "Open the FFmpeg executable".
+The first time you press the Export button a file dialogue will pop-up asking you to "Open the FFmpeg executable". This will also happen if the FFMPEG install is no longer valid.
 Navigate to the file location where you stored the FFmpeg folder, select the :literal:`bin/ffmpeg.exe` file.
 
 .. raw:: html
 
-    <img src="_static/GUI/VideoMaker_RENDER_File_FFmpeg_blurred.png"
-         style="width:100%;height:auto;">
-
+   <img src="_static/GUI/VideoMaker_RENDER_File_FFmpeg_blurred.png"
+        style="width:100%;height:auto;">
 
 The exported video can be found in :literal:`Output/Video`, and will have the same filename as the IDVS with an additional time-stamp at the end for when the video was made.
