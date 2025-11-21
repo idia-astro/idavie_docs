@@ -70,8 +70,8 @@ The interface for previewing and exporting IDVS to videos can be found in the RE
 1) The name of the IDVS currently loaded.
 2) Button to find and load an IDVS, opens a file explorer.
 3) Button to reload the current IDVS from disk. This is useful when making iterative changes to the current IDVS.
-4) Button to play the video in "Preview" mode. The video will not be exported to a file, but performance is better than exporting.
-5) Button to "Export" the video to an mp4 file in :literal:`Output/Video`. A preview of the video is also show, however this preview may not be in real-time (depending on the frame-rate of the exported video) and performance will not be as good as Preview mode.
+4) Button to play the video in "Preview" mode. The video will not be exported to a file, but performance is better than exporting. This button is only visible if an IDVS is loaded.
+5) Button to "Export" the video to an mp4 file in :literal:`Output/Video`. A preview of the video is also show, however this preview may not be in real-time (depending on the frame-rate of the exported video) and performance will not be as good as Preview mode. This button is only visible if an IDVS is loaded.
 
 If you press the Preview button, the video will be previewed in the GUI:
 
