@@ -237,8 +237,8 @@ The Source Info window displays the information of the selected source. This inc
 
 1) The number of the source in its list.
 2) Information about the position of the source. This will either be the weighted **centroid** (in case of mask sources) or the physical **centre** of the box (in the case of imported and selection boxes).
-3) The calculated sum of the data values for masked sources. This is the integrated intensity of the source.
-4) The calculated peak data value of the masked source.
+3) The calculated sum of the data values for masked sources (the beam size is not taken into account when calculating the sum). This is the integrated intensity of the source.
+4) The calculated peak data value of the masked source (the beam size is not taken into account when calculating the peak).
 5) The calculated the source's systemic velocity, or the velocity of its centroid (in voxel units).
 6) The calculated spectral line width at 20% of the peak intensity of the source (in voxel units).
 7) The calculated the source's systemic velocity, or the velocity of its centroid (in physical units).
