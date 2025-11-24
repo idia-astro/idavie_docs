@@ -155,12 +155,13 @@ The Quick menu is the main menu the user will interact with in the VR environmen
 3) Open the :ref:`voicecommands`.
 4) Open the :ref:`settings`.
 5) Open the :ref:`colourmap`.
-6) Toggle to crop the cube to the selected region or uncrop the cube if already cropped.
-7) Toggle the mask application options (voice command analogue in brackets). Options are to subtract the unmasked regions ("mask on"), subtract the masked regions ("mask invert"), show the mask by itself ("mask isolate"), or show the cube without the mask ("mask off").
-8) Take a screenshot of the current view.
-9) Save the mask to file.
-10) Open the :ref:`maskpainting` and start mask painting mode.
-11) Exit iDaVIE.
+6) Open the :ref:`maskpainting` and start mask painting mode.
+7) Toggle to crop the cube to the selected region or uncrop the cube if already cropped.
+8) Toggle the mask application options (voice command analogue in brackets). Options are to subtract the unmasked regions ("mask on"), subtract the masked regions ("mask invert"), show the mask by itself ("mask isolate"), or show the cube without the mask ("mask off").
+9) Take a screenshot of the current view.
+10) Open the :ref:`videoMakerUI` to record perspectives for making scripted videos.
+11) Save the mask to file.
+12) Exit iDaVIE.
 
 .. _maskpainting:
 

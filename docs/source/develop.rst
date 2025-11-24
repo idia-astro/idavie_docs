@@ -36,7 +36,7 @@ To facilitate the merging of separate branches that include merge conflicts in s
   ::
     
     # VSCode
-    * use code --wait "%r" "%l" "b" "%d"``
+    * use code --wait --merge "%l" "%r" "%b" "%d"
 
 Merging procedure
 -----------------
