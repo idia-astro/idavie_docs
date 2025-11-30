@@ -98,3 +98,5 @@ Navigate to the file location where you stored the FFmpeg folder, select the :li
         style="width:100%;height:auto;">
 
 The exported video can be found in :literal:`Output/Video`, and will have the same filename as the IDVS with an additional time-stamp at the end for when the video was made.
+
+.. WARNING:: If the data cube is too zoomed in or out, this can affect the video and you may need to go into VR to change the level of zoom. If the nearest parts of the cube are cut-off when the camera enters it, then you are probably too zoomed out (the cube is too small). Conversely, if distant parts of the cube are cut-off, then you are probably too zoomed in (cube is too big).
