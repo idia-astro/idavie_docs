@@ -24,7 +24,7 @@ iDaVIE provides functionality that allows the user to capture perspectives withi
 
 .. raw:: html
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/sICpmbkUZnA?si=lnUaJ3pmPM65N6ct" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Jh-1LdrYnI8?si=gzbQ8rWtNmOOK0YW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 See :ref:`videomakerui` for an explanation of the UI elements used for this functionality.
 
