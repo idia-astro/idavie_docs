@@ -1,4 +1,5 @@
 .. _build:
+
 Building iDaVIE from source
 ===========================
 
@@ -50,6 +51,7 @@ Prerequisites
   - Make sure to note the path to the vcpkg root folder, found at :literal:`C:\\\\vcpkg` for default installations.
 
 5. Install Steam and SteamVR
+
   - To use iDaVIE with any VR headset, we use Steam's SteamVR application as a bridge.
   - Download the `Steam installer <https://store.steampowered.com/about/>`_ and install it. Create a Steam account if you do not already have one (no cost to create).
   - Install `SteamVR <https://store.steampowered.com/app/250820/SteamVR/>`_ by clicking the "Play Game" button on the SteamVR page.
@@ -74,6 +76,7 @@ Prerequisites
   - From the Unity Hub, select the ``Add`` button and click ``Add project from disk`` (only necessary the first time). Navigate to where you downloaded the iDaVIE source code in step 5 and select the iDaVIE folder.
   - Once the project is opened, navigate to ``Assets/Scenes/`` in the Editor's navigation window (at the bottom) and double-click on the ui.unity file.
   - Under **Window->SteamVR Input**, click the **Save and generate** button.
+  
   .. raw:: html
 
         <img src="_static/Build_SteamVRInput_1.png"
@@ -90,23 +93,29 @@ Prerequisites
 
   - Open iDaVIE in the Unity Editor.
   - Open the build settings menu under **File->Build Settings**.
+  
   .. raw:: html
 
         <img src="_static/Build_Build_1.png"
              style="width:65%;height:auto;"
              class="center">
+  
   - Click on the Player Settings button on the bottom left.
+  
   .. raw:: html
 
         <img src="_static/Build_Build_2.png"
              style="width:65%;height:auto;"
              class="center">
+  
   - Under XR Plug-in Management (scroll down on the left), make sure that OpenVR Loader is selected in the list of Plug-in Providers.
+  
   .. raw:: html
 
         <img src="_static/Build_Build_3.png"
              style="width:65%;height:auto;"
              class="center">
+  
   - Click the **Build** button and select your destination folder.
 
 Troubleshooting

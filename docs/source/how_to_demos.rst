@@ -86,15 +86,93 @@ iDaVIE allows the user to investigate the basic statistics of the cube and to cr
          style="width:560px; height:315px;">
     <div style="height: 20px;"></div>
 
-Create a movie (using external tools)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-We have found the best way to record sessions in iDaVIE is by activating the VR View window in the SteamVR Status menu:
+Create a movie using iDaVIE
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+iDaVIE provides an extensive video recording mode, with more detail available at :ref:`videoMaker`.
 
 .. raw:: html
 
-    <img src="_static/SteamVR_view.png"
-         style="width:50%;height:auto;">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Jh-1LdrYnI8?si=gzbQ8rWtNmOOK0YW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-An external screen recorder can then be used to capture the contents of the VR View window. For this, we recommend users download OBS Studio (https://obsproject.com/download). OBS Studio is a free and open-source software for video recording and live streaming. By setting the recording window to the VR View window, users can record their iDaVIE sessions.
 
+Desktop Selection
+^^^^^^^^^^^^^^^^^^^^^
+
+Overview
+--------
+
+The desktop selection method introduces a way of masking sources without the use of a VR headset. This method allows you to move through your data slice by slice, circling regions of interest as you progress. Note: this method does not replace the VR selection methods but rather supplements it, the software needs an active headset to run.
+
+How to use Desktop Selection
+----------------------------
+
+The desktop interface is integrated into the already existing desktop UI for iDaVIE-v. Once a file is loaded you simply can select the “Paint” tab to enter the desktop selection mode:
+
+.. raw:: html
+
+    <img src="_static/desktop_selection_tool/1_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+
+User Interface for Desktop Selection
+------------------------------------
+
+The desktop selection interface, as shown above, has two primary components. The first being the left half of the screen which represents a 2D slice of the data that you are currently viewing. This is where you can draw to make selections. Below are several buttons relating to actions that can be performed on this window. The right half of the screen displays several settings that can be toggled, described from top to bottom in the following table:
+
++-----------------------+---------------------------------------------------------------+
+| Setting               | Description                                                   |
++=======================+===============================================================+
+| Slice slider          | Allows you to move between slices. The left and right arrow   |
+|                       | keys can also be used for this.                               |
++-----------------------+---------------------------------------------------------------+
+| Axis                  | Allows you to change which axis the slices are moving through.|
++-----------------------+---------------------------------------------------------------+
+| Source ID             | Allows you to set the source ID, or add new sources.          |
++-----------------------+---------------------------------------------------------------+
+| Colour Map            | Allows you to change the colour map the data is rendered in.  |
++-----------------------+---------------------------------------------------------------+
+| Selection Mode        | Similar to shape selection, allows you to toggle between      |
+|                       | additive and subtractive selection.                           |
++-----------------------+---------------------------------------------------------------+
+| Save Mask             | Options for saving a mask.                                    |
++-----------------------+---------------------------------------------------------------+
+| VR View               | Gives a view of the data in 3D to represent which slice of the|
+|                       | data is currently being displayed.                            |
++-----------------------+---------------------------------------------------------------+
+
+Flow for Desktop Selection
+--------------------------
+
+Once the desktop selection is open, you would begin by moving to the slice of the source you wish to begin painting. Once there, you simply use your mouse with the left click to draw an enclosed region around the source:
+
+.. raw:: html
+
+    <img src="_static/desktop_selection_tool/2_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+
+Once you are happy, you can either press the Apply Mask button or Space Bar to confirm your selection. The outline will then turn yellow to indicate the selection has taken place:
+
+.. raw:: html
+
+    <img src="_static/desktop_selection_tool/3_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+
+Now, you may not be completely happy with the selection you made. You can either press undo to undo the drawing, or clear to clear all sources with the current source ID on that slice. Alternatively, you can swap to subtractive mode and draw to remove part of your selection:
+
+.. raw:: html
+
+    <img src="_static/desktop_selection_tool/4_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+
+.. raw:: html
+
+    <img src="_static/desktop_selection_tool/5_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+
+Now, if you want to isolate a separate source you can add a new source ID by pressing the + button next to the source ID dropdown. You will notice that the new source you identified is now yellow and the previous source is orange. The yellow indicates the source matching the currently selected source ID.
+
+.. raw:: html
+
+    <img src="_static/desktop_selection_tool/6_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+
+For ease of use, when you traverse to the next slice and find that the sources are similar to the previous slice, you can simply press the Previous Mask button or P on your keyboard to copy the masks you drew in the previous slice over to the next:
+
+.. raw:: html
+
+    <img src="_static/desktop_selection_tool/7_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+
+Finally, once you are happy with your mask you can save it as a new mask or overwrite a previously uploaded mask file.
