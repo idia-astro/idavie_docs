@@ -222,10 +222,3 @@ In VR, the use of the controllers can become tricky, so we have implemented a se
  
 .. note:: * A full list of colour maps is available from the quick menu, the options here are merely those available from voice commands.
 .. WARNING:: We are aware that the voice commands do not work when the user is recording a movie using an external software. In this case the user should use the menu options. See more in the section :ref:`how_to_demos`. 
-       
-
-     
-     
-
-
- 
