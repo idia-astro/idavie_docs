@@ -41,11 +41,11 @@ A full reference and documentation for the language can be found at :ref:`idvs_r
 Example Script
 ^^^^^^^^^^^^^^
 
-The video below showcases a number of viewpoints and methods to move around the datacube. The source code for this video can be found on `the main repository <https://www.github.com/idia-astro/iDaVIE/????>`_.
+The video below showcases a number of viewpoints and methods to move around the datacube. The source code for this video can be found on `the main repository <https://github.com/idia-astro/iDaVIE/blob/0a93559a7d670812abc4358389255e057e287e46/Scripts/VideoScripts/Turntable_Examples.idvs>`_.
 
 .. raw:: html
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/????" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1Sv3PxLZML0?si=i41CnJfb8DfZ70cx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Summary of Commands
 ^^^^^^^^^^^^^^^^^^^
