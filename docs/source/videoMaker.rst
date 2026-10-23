@@ -41,7 +41,7 @@ A full reference and documentation for the language can be found at :ref:`idvs_r
 Example Script
 ^^^^^^^^^^^^^^
 
-The video below showcases a number of viewpoints and methods to move around the datacube. The source code for this video can be found on `the main repository <https://github.com/idia-astro/iDaVIE/blob/0a93559a7d670812abc4358389255e057e287e46/Scripts/VideoScripts/Turntable_Examples.idvs>`_.
+The video below showcases a number of viewpoints and methods to move around the datacube. The source code for this video can be found on `the main repository <https://github.com/idia-astro/iDaVIE/blob/eda59c4d400feb4f3ce5b7fc530e8210eb5650f5/Scripts/VideoScripts/Turntable_Examples.idvs>`_.
 
 .. raw:: html
 
