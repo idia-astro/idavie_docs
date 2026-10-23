@@ -7,7 +7,7 @@ Overview
 
 iDaVIE-p renders tables of points in virtual reality. Each row of a table is drawn as a particle. The columns of the table set the position of each particle, and can also set its colour, opacity, size and shape. This makes iDaVIE-p well suited to sparse, multiparameter data, such as galaxy catalogues, all-sky surveys and particle simulations.
 
-iDaVIE-p uses the same VR environment as the volume side of iDaVIE. The way you move and scale the data with the controllers, and the VR windows, will be familiar to users of iDaVIE-v.
+iDaVIE-p uses the same VR environment as the volume side of iDaVIE. The way you move and scale the data with the controllers will be familiar to users of iDaVIE-v.
 
 Workflow
 --------

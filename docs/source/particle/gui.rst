@@ -18,7 +18,9 @@ The Desktop GUI is divided into two main sections:
 
 All the controls in the inspector act on the **active dataset**, which is chosen in the :literal:`Loaded tables` tab.
 
-.. TODO screenshot: desktop overview with a rendered dataset and the inspector open (particle/desktop_overview.png)
+.. image:: /_static/particle/desktop_overview.png
+    :alt: The desktop GUI of iDaVIE-p with a rendered table
+    :width: 100%
 
 Left tab bar
 ^^^^^^^^^^^^
@@ -35,7 +37,9 @@ The icons on the left are, from top to bottom:
 Loaded tables
 ^^^^^^^^^^^^^
 
-.. TODO screenshot: Loaded tables tab with two datasets, one of them hidden (particle/tables_list.png)
+.. image:: /_static/particle/tables_list.png
+    :alt: The Loaded tables tab with two datasets, one of them hidden
+    :width: 100%
 
 The first row of the list is :literal:`New Table...`. Click it to deselect the active dataset. This enables the :literal:`Load Data Table` and :literal:`Render Data` buttons on the LOAD tab, so that you can load another table.
 
@@ -57,7 +61,9 @@ LOAD tab
 
 The LOAD tab is where a table is loaded and placed in the VR space. Loading a table is a two-step process: the table is first *staged* (only its column information is read), so that you can choose the position columns, and then *rendered* (all rows are read).
 
-.. TODO screenshot: LOAD tab with a staged table (particle/load_tab.png)
+.. image:: /_static/particle/load_tab.png
+    :alt: The LOAD tab with a staged table
+    :width: 50%
 
 #. :literal:`Load Data Table` opens a file dialog to choose a table. The supported formats are listed in :ref:`particle_inputs_outputs`. The name of the chosen file is shown above the button. This button is disabled while a dataset is active; click :literal:`New Table...` in the :literal:`Loaded tables` tab first to load another table.
 #. :literal:`Load Mapping File` opens a file dialog to choose a JSON mapping file (see :ref:`particle_mapping_files`). If a dataset is active, the mapping is applied to it immediately. Otherwise it is used when the staged table is rendered.
@@ -78,7 +84,9 @@ Filter
 
 The :literal:`Filter` section of the LOAD tab (collapsed by default) shows only the particles of the active dataset that match a set of conditions, and hides the rest.
 
-.. TODO screenshot: Filter section with two conditions (particle/load_filter.png)
+.. image:: /_static/particle/load_filter.png
+    :alt: The Filter section of the LOAD tab with one condition
+    :width: 50%
 
 * :literal:`Enable Filter` (on by default) turns the applied filter on or off. When it is off, all particles are shown. This takes effect immediately.
 * :literal:`Invert Filter` hides the matching particles instead of the others. This takes effect immediately.
@@ -122,7 +130,9 @@ The RENDERING tab sets how the columns of the active dataset are mapped to the c
 Simple mode
 ~~~~~~~~~~~
 
-.. TODO screenshot: RENDERING tab in simple mode, with colour mapped to a column (particle/rendering_simple.png)
+.. image:: /_static/particle/rendering_simple.png
+    :alt: The RENDERING tab in simple mode, with the colour mapped to a column
+    :width: 100%
 
 The simple layout has four blocks: :literal:`Color`, :literal:`Opacity`, :literal:`Particle Size` and :literal:`Particle Shape`. The top row of each block has:
 
@@ -145,7 +155,9 @@ When :literal:`Uniform` is on, the block shows a single control instead: a rainb
 Advanced mode
 ~~~~~~~~~~~~~
 
-.. TODO screenshot: RENDERING tab in advanced mode (particle/rendering_advanced.png)
+.. image:: /_static/particle/rendering_advanced.png
+    :alt: The RENDERING tab in advanced mode
+    :width: 50%
 
 The advanced layout shows the full mapping as a grid, with a column for each of :literal:`Color`, :literal:`Opacity`, :literal:`Point Size` and :literal:`Point Shape`, and a colour map dropdown above it. The rows of the grid are:
 
@@ -184,7 +196,9 @@ SELECTION tab
 
 The SELECTION tab shows the selected particles of the active dataset, and has tools to change, analyse and export the selection. Particles are selected in VR (see :ref:`particle_how_to_interact`) or by condition from this tab.
 
-.. TODO screenshot: SELECTION tab with a selection and its statistics (particle/selection_tab.png)
+.. image:: /_static/particle/selection_tab.png
+    :alt: The SELECTION tab, with the selected particles highlighted in the VR view
+    :width: 100%
 
 At the top, the tab shows the name of the active dataset and the number of selected particles, e.g. :literal:`1,204 selected of 121,280 (0.99%)`. If some of the selected particles are hidden by the filter, a note in orange says how many.
 
@@ -212,6 +226,10 @@ Statistics
 ~~~~~~~~~~
 
 This section shows statistics of the selected particles for the column chosen in the :literal:`Column` dropdown:
+
+.. image:: /_static/particle/selection_stats.png
+    :alt: Statistics of the selected particles in the SELECTION tab
+    :width: 50%
 
 * For a numeric column: the number of values and nulls, the mean, standard deviation, minimum, quartiles, median and maximum. A histogram compares the selected particles (white) with all particles (grey). Each is scaled to its own peak.
 * For a text column: the number of values, nulls and unique values, and the 10 most frequent values with their counts.
@@ -246,7 +264,9 @@ These rules decide which particles can be added to a selection, in VR, with :lit
 SETTINGS tab
 ^^^^^^^^^^^^
 
-.. TODO screenshot: SETTINGS tab with the sections expanded (particle/settings_tab.png)
+.. image:: /_static/particle/settings_tab.png
+    :alt: The SETTINGS tab
+    :width: 50%
 
 Null rendering
 ~~~~~~~~~~~~~~
@@ -279,6 +299,10 @@ DEBUG tab
 
 The DEBUG tab shows the log messages of the current session. :literal:`Save log file` saves them to a file of your choice. The log is also saved automatically, see :ref:`particle_inputs_outputs`.
 
+.. image:: /_static/particle/debug_tab.png
+    :alt: The DEBUG tab
+    :width: 50%
+
 VR GUI
 ------
 
@@ -291,7 +315,9 @@ Quick Menu
 
 Hold **Y** on the left controller to show the Quick Menu next to it. It disappears when you release the button. While you hover over a button with the laser, its name is shown at the bottom of the menu.
 
-.. TODO screenshot: VR Quick Menu (particle/vr_quick_menu.png)
+.. image:: /_static/particle/vr_quick_menu.png
+    :alt: The VR Quick Menu
+    :width: 40%
 
 The buttons open the following windows:
 
@@ -317,7 +343,9 @@ Moving windows
 Dataset List
 ^^^^^^^^^^^^
 
-.. TODO screenshot: VR Dataset List window (particle/vr_dataset_list.png)
+.. image:: /_static/particle/vr_dataset_list.png
+    :alt: The VR Dataset List window
+    :width: 50%
 
 The Dataset List window has the same functions as the :ref:`Loaded tables <particle_tables>` tab of the desktop GUI. Click the name of a dataset to make it the active dataset. Each row has:
 
@@ -332,7 +360,9 @@ Particle Inquiry
 
 The Particle Inquiry window lists the values of all the columns of the particle that was last looked up (see :ref:`particle_how_to_interact`). Use the arrow buttons below the list to scroll it. The reset button in the header clears the look-up.
 
-.. TODO screenshot: VR Particle Inquiry window (particle/vr_inquiry.png)
+.. image:: /_static/particle/vr_inquiry.png
+    :alt: The VR Particle Inquiry window
+    :width: 40%
 
 .. _particle_vr_render_mapping:
 
@@ -341,7 +371,9 @@ Render Mapping
 
 The Render Mapping window, opened with :literal:`Render Parameter Tuning`, shows and changes the mapping of the active dataset in VR.
 
-.. TODO screenshot: VR Render Mapping window (particle/vr_render_mapping.png)
+.. image:: /_static/particle/vr_render_mapping.png
+    :alt: The VR Render Mapping window, showing the colour mapping
+    :width: 100%
 
 The lower part of the window is a grid. It has a column for each property that a data column can be mapped to: :literal:`X`, :literal:`Y`, :literal:`Z`, :literal:`Color`, :literal:`Opacity`, :literal:`Size` and :literal:`Shape`, and a row for each column of the table. The first row, :literal:`Uniform`, gives every particle the same value. Each cell shows:
 
@@ -361,7 +393,9 @@ Color Map List
 
 The Color Map List window lists the available colour maps, grouped by type (sequential, diverging, cyclic, qualitative and miscellaneous), with a preview of each. Click a colour map to apply it to the active dataset.
 
-.. TODO screenshot: VR Color Map List window (particle/vr_colormaps.png)
+.. image:: /_static/particle/vr_colormaps.png
+    :alt: The VR Color Map List window
+    :width: 35%
 
 .. _particle_vr_selection:
 
@@ -370,7 +404,9 @@ Selection
 
 The Selection window shows the selection of the active dataset, like the :ref:`SELECTION tab <particle_selection_tab>` of the desktop GUI: the number of selected particles, and the statistics of the selected particles for one column.
 
-.. TODO screenshot: VR Selection window with statistics (particle/vr_selection.png)
+.. image:: /_static/particle/vr_selection.png
+    :alt: The VR Selection window
+    :width: 35%
 
 * :literal:`Invert` selects the particles that are not selected, and unselects the others.
 * :literal:`Export` writes the selected rows to a new table file. See :ref:`particle_inputs_outputs`.
@@ -382,3 +418,7 @@ Voice Commands List
 ^^^^^^^^^^^^^^^^^^^
 
 The Voice Commands List window lists all voice commands. Click a command to run it. See :ref:`particle_how_to_interact`.
+
+.. image:: /_static/particle/vr_voice_commands.png
+    :alt: The VR Voice Commands List window
+    :width: 40%

@@ -15,7 +15,9 @@ Render a table
 #. Click :literal:`Render Data`. When the progress bar turns green, the desktop GUI switches to the VR view.
 #. Put on the headset. Grab the data with one grip to move it, and with both grips to scale and rotate it (see :ref:`particle_how_to_interact`).
 
-.. TODO screenshot: the rendered 2MRS sample in the VR view (particle/demo_render.png)
+.. image:: /_static/particle/demo_render.png
+    :alt: The 2MRS sample table rendered in iDaVIE-p
+    :width: 100%
 
 Change the mapping on the desktop
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -51,7 +53,9 @@ Select particles in VR and look at their statistics
 #. Press **B** to switch to the red sphere, and hold **A** to remove galaxies from the selection. Press **B** again to go back to adding.
 #. On the desktop, open the SELECTION tab. It shows the number of selected galaxies. Under :literal:`Statistics`, choose the :literal:`Z1` column to see the distribution of the selected galaxies along the Z axis, compared with all galaxies. In VR, the same information is shown in the Selection window, opened from the Quick Menu.
 
-.. TODO screenshot: SELECTION tab with the statistics of a selection (reuse particle/selection_tab.png)
+.. image:: /_static/particle/selection_stats.png
+    :alt: Statistics of the selected particles in the SELECTION tab
+    :width: 50%
 
 Select particles by condition
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
