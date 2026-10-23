@@ -21,7 +21,7 @@ In this section we provide guidelines on how to use the Oculus controllers as th
 
 .. raw:: html
 
-  <img src="_static/Oculus.png"
+  <img src="../_static/Oculus.png"
        style="width:100%;height:auto;">
 
 #. **Thumbstick (primary hand)**: It can be used to scroll through (up and down) lists

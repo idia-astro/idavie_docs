@@ -23,7 +23,7 @@ Prerequisites
     
     .. raw:: html
 
-       <img src="_static/Build_VisualStudioInstall_WorkloadSelect.png"
+       <img src="../_static/Build_VisualStudioInstall_WorkloadSelect.png"
          style="width:60%;height:auto;"
          class="center">
 
@@ -31,7 +31,7 @@ Prerequisites
     
     .. raw:: html
 
-       <img src="_static/Build_VisualStudioInstall_ComponentSelect.png"
+       <img src="../_static/Build_VisualStudioInstall_ComponentSelect.png"
          style="width:40%;height:auto"
          class="center">
 
@@ -79,13 +79,13 @@ Prerequisites
   
   .. raw:: html
 
-        <img src="_static/Build_SteamVRInput_1.png"
+        <img src="../_static/Build_SteamVRInput_1.png"
              style="width:60%;height:auto;"
              class="center">
 
   .. raw:: html
 
-        <img src="_static/Build_SteamVRInput_2.png"
+        <img src="../_static/Build_SteamVRInput_2.png"
              style="width:35%;height:auto;"
              class="center">
 
@@ -96,7 +96,7 @@ Prerequisites
   
   .. raw:: html
 
-        <img src="_static/Build_Build_1.png"
+        <img src="../_static/Build_Build_1.png"
              style="width:65%;height:auto;"
              class="center">
   
@@ -104,7 +104,7 @@ Prerequisites
   
   .. raw:: html
 
-        <img src="_static/Build_Build_2.png"
+        <img src="../_static/Build_Build_2.png"
              style="width:65%;height:auto;"
              class="center">
   
@@ -112,7 +112,7 @@ Prerequisites
   
   .. raw:: html
 
-        <img src="_static/Build_Build_3.png"
+        <img src="../_static/Build_Build_3.png"
              style="width:65%;height:auto;"
              class="center">
   

@@ -16,15 +16,15 @@ iDaVIE: immersive Data Visualisation Interactive Explorer
    introduction.rst
    requirements.rst
    installation_and_configuration.rst
-   inputs_outputs.rst
-   gui.rst
-   how_to_interac.rst
-   how_to_demos.rst
-   videoMaker.rst
-   idvs_ref.rst
+   volume/inputs_outputs.rst
+   volume/gui.rst
+   volume/how_to_interact.rst
+   volume/how_to_demos.rst
+   volume/videoMaker.rst
+   volume/idvs_ref.rst
    contribute.rst
    future.rst
-   build.rst
+   volume/build.rst
    develop.rst
    about.rst
    multidisciplinary.rst

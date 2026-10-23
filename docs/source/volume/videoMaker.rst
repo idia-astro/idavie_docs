@@ -73,7 +73,7 @@ The interface for previewing and exporting IDVS to videos can be found in the RE
 
 .. raw:: html
 
-   <img src="_static/GUI/VideoMaker_RENDER_IDVS_annotated.png"
+   <img src="../_static/GUI/VideoMaker_RENDER_IDVS_annotated.png"
         style="width:100%;height:auto;">
 
 1) The name of the IDVS currently loaded.
@@ -86,7 +86,7 @@ If you press the Preview button, the video will be previewed in the GUI:
 
 .. raw:: html
 
-   <img src="_static/GUI/VideoMaker_RENDER_playing_annotated.png"
+   <img src="../_static/GUI/VideoMaker_RENDER_playing_annotated.png"
         style="width:100%;height:auto;">
 
 1) View of the video being previewed. Replaces the usual VR View.
@@ -103,7 +103,7 @@ Navigate to the file location where you stored the FFmpeg folder, select the :li
 
 .. raw:: html
 
-   <img src="_static/GUI/VideoMaker_RENDER_File_FFmpeg_blurred.png"
+   <img src="../_static/GUI/VideoMaker_RENDER_File_FFmpeg_blurred.png"
         style="width:100%;height:auto;">
 
 The exported video can be found in :literal:`Output/Video`, and will have the same filename as the IDVS with an additional time-stamp at the end for when the video was made.

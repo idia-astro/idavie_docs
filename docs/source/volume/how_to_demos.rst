@@ -30,7 +30,7 @@ The 3D cursor will provide information about the current voxel under the cursor.
 
 .. raw:: html
 
-  <img src="_static/Cursor-feedback.png" style="width:560px; height:315px;">
+  <img src="../_static/Cursor-feedback.png" style="width:560px; height:315px;">
 
 
 The controller can also be used to adjust the minimum and maximum thresholds of the applied colour map of the cube. Using the "Edit min" or "Edit max" voice command, the user can move the primary controller up and down to adjust either threshold:
@@ -82,7 +82,7 @@ iDaVIE allows the user to investigate the basic statistics of the cube and to cr
 
 .. raw:: html
 
-    <img src="_static/MMap-slide.png"
+    <img src="../_static/MMap-slide.png"
          style="width:560px; height:315px;">
     <div style="height: 20px;"></div>
 
@@ -110,7 +110,7 @@ The desktop interface is integrated into the already existing desktop UI for iDa
 
 .. raw:: html
 
-    <img src="_static/desktop_selection_tool/1_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+    <img src="../_static/desktop_selection_tool/1_desktop_selection_tool.jpg" style="width:40%;height:auto;">
 
 User Interface for Desktop Selection
 ------------------------------------
@@ -145,34 +145,34 @@ Once the desktop selection is open, you would begin by moving to the slice of th
 
 .. raw:: html
 
-    <img src="_static/desktop_selection_tool/2_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+    <img src="../_static/desktop_selection_tool/2_desktop_selection_tool.jpg" style="width:40%;height:auto;">
 
 Once you are happy, you can either press the Apply Mask button or Space Bar to confirm your selection. The outline will then turn yellow to indicate the selection has taken place:
 
 .. raw:: html
 
-    <img src="_static/desktop_selection_tool/3_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+    <img src="../_static/desktop_selection_tool/3_desktop_selection_tool.jpg" style="width:40%;height:auto;">
 
 Now, you may not be completely happy with the selection you made. You can either press undo to undo the drawing, or clear to clear all sources with the current source ID on that slice. Alternatively, you can swap to subtractive mode and draw to remove part of your selection:
 
 .. raw:: html
 
-    <img src="_static/desktop_selection_tool/4_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+    <img src="../_static/desktop_selection_tool/4_desktop_selection_tool.jpg" style="width:40%;height:auto;">
 
 .. raw:: html
 
-    <img src="_static/desktop_selection_tool/5_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+    <img src="../_static/desktop_selection_tool/5_desktop_selection_tool.jpg" style="width:40%;height:auto;">
 
 Now, if you want to isolate a separate source you can add a new source ID by pressing the + button next to the source ID dropdown. You will notice that the new source you identified is now yellow and the previous source is orange. The yellow indicates the source matching the currently selected source ID.
 
 .. raw:: html
 
-    <img src="_static/desktop_selection_tool/6_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+    <img src="../_static/desktop_selection_tool/6_desktop_selection_tool.jpg" style="width:40%;height:auto;">
 
 For ease of use, when you traverse to the next slice and find that the sources are similar to the previous slice, you can simply press the Previous Mask button or P on your keyboard to copy the masks you drew in the previous slice over to the next:
 
 .. raw:: html
 
-    <img src="_static/desktop_selection_tool/7_desktop_selection_tool.jpg" style="width:40%;height:auto;">
+    <img src="../_static/desktop_selection_tool/7_desktop_selection_tool.jpg" style="width:40%;height:auto;">
 
 Finally, once you are happy with your mask you can save it as a new mask or overwrite a previously uploaded mask file.

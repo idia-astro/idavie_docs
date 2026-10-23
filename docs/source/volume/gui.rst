@@ -31,7 +31,7 @@ The FILE tab is what the user will see when iDaVIE is opened. This tab includes 
 
 .. raw:: html
 
-     <img src="_static/GUI/Desktop1.png"
+     <img src="../_static/GUI/Desktop1.png"
           style="width:100%;height:auto;">
 
 #. The version of this build of iDaVIE. Useful when reporting errors or bugs.
@@ -54,7 +54,7 @@ The RENDER tab includes options to tune the rendering parameters of the cube.
 
 .. raw:: html
 
-     <img src="_static/GUI/Desktop2.png"
+     <img src="../_static/GUI/Desktop2.png"
           style="width:100%;height:auto;">
 
 1) Dropdown menu to set a precalculated size for the cube side lengths. The default is :literal:`X=Y=Z`, setting the cube to 1x1x1 size. The other option of :literal:`X=Y` sets the X and Y lengths of the cube equal (to be a square) and sets the Z length to have the same ratio as the X and Z lengths of the data cube. 
@@ -72,7 +72,7 @@ The STATS tab includes options to check and interact with some basic data statis
 
 .. raw:: html
 
-     <img src="_static/GUI/Desktop3.png"
+     <img src="../_static/GUI/Desktop3.png"
           style="width:100%;height:auto;">
 
 
@@ -93,7 +93,7 @@ The SOURCES tab includes options to load a catalog of sources. The catalog can b
 
 .. raw:: html
 
-     <img src="_static/GUI/Desktop4.png"
+     <img src="../_static/GUI/Desktop4.png"
           style="width:100%;height:auto;">
 
 1) Click this Browse button to open the file explorer and select the catalog file to load.
@@ -115,7 +115,7 @@ The DEBUG tab includes a readout of the debug log for the current session. This 
 
 .. raw:: html
      
-          <img src="_static/GUI/Desktop5.png"
+          <img src="../_static/GUI/Desktop5.png"
                style="width:100%;height:auto;">
 
 
@@ -130,7 +130,7 @@ After loading a file in the FILE tab, the user can put on the headset. The first
 
    .. raw:: html
 
-       <img src="_static/GUI/VR-first-view.png"
+       <img src="../_static/GUI/VR-first-view.png"
             style="width:100%;height:auto;">
 
    The axes are RGB colour-coded as (for example):
@@ -147,7 +147,7 @@ The Quick menu is the main menu the user will interact with in the VR environmen
 
 .. raw:: html
      
-          <img src="_static/GUI/QuickMenu.png"
+          <img src="../_static/GUI/QuickMenu.png"
                style="width:50%;height:auto;">
 
 1) Open the :ref:`sourcelist`.
@@ -174,7 +174,7 @@ In the mask painting mode, the user can paint the mask using the controllers. Th
 
 .. raw:: html
      
-          <img src="_static/GUI/PaintMenu.png"
+          <img src="../_static/GUI/PaintMenu.png"
                style="width:50%;height:auto;">
 
 1) Activate additive brush mode. This allows the user to add to the mask by painting with the primary controller. The value of the mask is set to the current Source ID that will be indicated at the top of the menu.
@@ -203,7 +203,7 @@ This window displays the three types of sources that can be used with iDaVIE: ma
 
 .. raw:: html
      
-          <img src="_static/GUI/SourcesMenu.png"
+          <img src="../_static/GUI/SourcesMenu.png"
                style="width:100%;height:auto;">
 
 1) Button to select the indicated source.
@@ -237,7 +237,7 @@ The Source Info window displays the information of the selected source. This inc
 
 .. raw:: html
      
-          <img src="_static/GUI/SourceInfo.png"
+          <img src="../_static/GUI/SourceInfo.png"
                style="width:50%;height:auto;">
 
 1) The number of the source in its list.
@@ -259,7 +259,7 @@ The Settings window allows the user to adjust the rendering settings of the cube
 
 .. raw:: html
      
-          <img src="_static/GUI/SettingsMenu.png"
+          <img src="../_static/GUI/SettingsMenu.png"
                style="width:100%;height:auto;">
 
 1) Arrow buttons to change the applied colour map of the cube.
@@ -287,7 +287,7 @@ The Plots window gives the user access to useful 2D plots calculated in realtime
 
 .. raw:: html
      
-          <img src="_static/GUI/PlotsMenu.png"
+          <img src="../_static/GUI/PlotsMenu.png"
                style="width:100%;height:auto;">
 
 
@@ -319,7 +319,7 @@ The Keypad is a virtual keypad that can be used to input custom values for the m
 
 .. raw:: html
      
-          <img src="_static/GUI/Keypad.png"
+          <img src="../_static/GUI/Keypad.png"
                style="width:30%;height:auto;">
 
 
@@ -332,7 +332,7 @@ The Voice Command window displays the available voice commands that the user can
 
 .. raw:: html
      
-          <img src="_static/GUI/VoiceCommandMenu.png"
+          <img src="../_static/GUI/VoiceCommandMenu.png"
                style="width:40%;height:auto;">
 
 1) Click the arrow button to manually activate the voice command.
@@ -348,7 +348,7 @@ The Colourmap window displays the available colour maps that the user can apply 
 
 .. raw:: html
      
-          <img src="_static/GUI/ColorMenu.png"
+          <img src="../_static/GUI/ColorMenu.png"
                style="width:40%;height:auto;">
 
 1) Click the arrow button to apply the colour map.
@@ -363,7 +363,7 @@ The Videomaker window provides access to tools used for generating a list of per
 
 .. raw:: html
 
-     <img src="_static/GUI/VideoMakerModeMenu_UI.png"
+     <img src="../_static/GUI/VideoMakerModeMenu_UI.png"
           style="width:40%;height:auto;">
 
 1) Toggle whether the recorded perspective are from the head position, or from the cursor position. The button image changes to show the current mode.
@@ -380,7 +380,7 @@ The Videomaker list of points displays all the perspectives recorded in the curr
 
 .. raw:: html
 
-     <img src="_static/GUI/VideoMakerPointList_UI.png"
+     <img src="../_static/GUI/VideoMakerPointList_UI.png"
           style="width:40%;height:auto;">
 
 1) Each point is either a head position, or a cursor position.
@@ -399,7 +399,7 @@ The 3D cursor will provide information about the current voxel under the cursor.
 
 .. raw:: html
      
-          <img src="_static/GUI/CursorInfo.png"
+          <img src="../_static/GUI/CursorInfo.png"
                style="width:100%;height:auto;">
 
 1) The cursor itself is a small sphere that will follow the controller position. When inside the cube, individual voxels will be highlighted by the cursor with a green outline. This indicates what voxel the information will be displayed for.
