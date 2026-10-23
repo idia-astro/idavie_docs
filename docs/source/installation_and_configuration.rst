@@ -14,6 +14,8 @@ Once the requirements described in :ref:`requirements`, are installed and workin
          style="width:100%;height:auto;">
 
 To start the software, double-click on the executable iDaVIE file.
+
+.. note:: The particle side of iDaVIE (iDaVIE-p) has no release yet. To use it, build it from source as described in :ref:`particle_build`.
  
 
 Source code
@@ -169,6 +171,8 @@ Config Options
      - Imported sources start visible. Default: ``true``.
    * - **numberOfLogsToKeep**
      - The number of sessions' to keep the log files of. Default: ``5``.
+
+.. note:: The particle side of iDaVIE (iDaVIE-p, see :ref:`particle_overview`) only reads the following settings: **tunnellingVignetteOn**, **tunnellingVignetteIntensity** and **voiceCommandConfidenceLevel**. All other settings, including the moment map settings below, only apply to the volume side.
 
 Moment Maps Config Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

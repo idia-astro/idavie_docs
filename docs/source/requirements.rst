@@ -23,6 +23,8 @@ Any VR headset compatible with SteamVR should function. The following VR headset
 
 .. Note:: All of these headsets should work, but you might have to change the control bindings in the SteamVR interface.
 
+.. Note:: The preview of the particle side of iDaVIE (iDaVIE-p) currently only provides controller bindings for Meta (Oculus) Touch controllers, as used by the Meta Rift S and Quest headsets. Other controllers need bindings to be set up in the SteamVR interface.
+
 .. Tip:: In the IDIA Visualisation Lab we use the Meta Quest 2 and the Meta Rift S headsets, with a dedicated machine in the lab and GPU-powered laptops while on the road. 
 
 Software

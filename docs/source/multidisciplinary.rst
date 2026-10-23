@@ -31,23 +31,28 @@ The following code snippet demonstrates how to convert a random 3D numpy array t
 Particle data
 ^^^^^^^^^^^^^
 
-For particle data, iDaVIE supports the IPAC :literal:`.tbl` table and :literal:`.fits` table formats. The best way to prepare particle data for iDaVIE is to convert it to either of these formats, though we recommend the latter. This can also be done using the `Astropy <https://www.astropy.org/>`_ library in Python.
+For particle data, iDaVIE supports :literal:`.fits` binary tables, :literal:`.csv` files and IPAC :literal:`.tbl` tables. The best way to prepare particle data for iDaVIE is to convert it to a :literal:`.fits` table. This can also be done using the `Astropy <https://www.astropy.org/>`_ library in Python.
 
-The following code snippet demonstrates how to convert a sparse 3D particle table to a :literal:`.fits` file:
+The following code snippet demonstrates how to write a sparse 3D particle table to a :literal:`.fits` file:
 
 .. code-block:: python
 
     import numpy as np
     from astropy.table import Table
 
-    # Create a random 3D numpy array.
-    data = np.random.rand(100, 100, 100)
-
-    # Create a random 3D particle table.
-    particle_table = Table(data, names=['x', 'y', 'z', 'mass'])
+    # Create a table of 10000 random particles with a position and a mass.
+    n = 10000
+    particle_table = Table({
+        'x': np.random.rand(n),
+        'y': np.random.rand(n),
+        'z': np.random.rand(n),
+        'mass': np.random.rand(n),
+    })
 
     # Write the table to a .fits file
     particle_table.write('particle_data.fits', format='fits')
+
+See :ref:`particle_inputs_outputs` for more details on the supported formats.
 
 
 
@@ -58,7 +63,7 @@ Examples
 Astronomy
 ^^^^^^^^^
 
-iDaVIE is primarily developed around interacting with volumetric astronomical data, examples of which can be seen in the :ref:`how_to_demos` page. However, the software can also be used to visualise sparse multidimensional data sets using its particle rendering capabilities. Currently this can only be done in the source Unity project, but we plan to add this functionality to the standalone iDaVIE release in the future. We feature some examples below.
+iDaVIE is primarily developed around interacting with volumetric astronomical data, examples of which can be seen in the :ref:`how_to_demos` page. However, the software can also be used to visualise sparse multidimensional data sets using its particle rendering capabilities. This is currently only available by building iDaVIE-p from source, and a preview is documented in :ref:`particle_overview`. We plan to add this functionality to the standalone iDaVIE release in the future. We feature some examples below.
 
 All-sky Surveys
 ~~~~~~~~~~~~~~~
