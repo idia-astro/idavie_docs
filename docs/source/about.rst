@@ -2,7 +2,7 @@
 
 About iDaVIE
 ============
-iDaVIE (the immersive Data Visualisation Interactive Explorer) was conceived by and is being developed under the custody of the IDIA Visualisation Laboratory.  It provides a Virtual Reality experience for data cube exploration. It visualises 3D data in an interaction 'box', a 3D block (or elongated cube) in VR space which allows the user to extract vital feedback information about the enclosed data (including cumulative statistics and historical data).
+iDaVIE (the immersive Data Visualisation Interactive Explorer) was conceived by and is being developed under the custody of the IDIA Visualisation Laboratory.  It provides a Virtual Reality experience for data cube exploration. It visualises 3D data in an interaction 'box', a 3D block (or elongated cube) in VR space which allows the user to extract vital feedback information about the enclosed data (including cumulative statistics and historical data).  You can `send us an email <mailto:vislab@idia.ac.za?subject=Subscribe%20to%20iDaVIE%20mailing%20list&body=Please%20add%20this%20email%20address%20to%20the%20iDaVIE%20mailing%20list.>`_ if you want to be added to the iDaVIE mailing list to receive news about updates and new features to iDaVIE.
 
 Contributors
 ------------

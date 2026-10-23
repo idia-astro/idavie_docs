@@ -6,7 +6,7 @@ Installation and configuration
 
 Executable
 -----------
-Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided :literal:`iDaVIE.1.0.zip`, which contains the executable .exe (and other reference files). The zip file is available on Github at this `link <https://github.com/idia-astro/iDaVIE/releases/latest>`_.
+Once the requirements described in :ref:`requirements`, are installed and working correctly, the user can download and unzip the provided :literal:`iDaVIE-v1.1.zip`, which contains the executable .exe (and other reference files). The zip file is available on Github at this `link <https://github.com/idia-astro/iDaVIE/releases/latest>`_.
 
 .. raw:: html
 
@@ -167,6 +167,8 @@ Config Options
        false uses a more informative text version. Default: ``true``.
    * - **importedFeaturesStartVisible**
      - Imported sources start visible. Default: ``true``.
+   * - **numberOfLogsToKeep**
+     - The number of sessions' to keep the log files of. Default: ``5``.
 
 Moment Maps Config Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -237,11 +239,9 @@ In this section we share some useful tips where we found a solution to a known i
   #. Post an issue on the Github repository, or,
   
   #. Make contact with us and send us the log files along with your bug reports. The log files can be found in the directory :literal:`iDaVIE/Outputs/Logs`.
-  
-.. WARNING:: Unity only allows for a maximum of two log files to be stored. Therefore, if a problem is encountered with iDaVIE, make sure to copy the log file to a different folder **BEFORE** starting a new iDaVIE session, otherwise the log file reporting the specific problem encountered will be lost.
 
 Known issues
 ------------
 The following are issues we already know about and that will be fixed as soon as possible:
 
-#. Problem with virus protection systems. We will make a request to Norton to have our software "whitelisted". In the meantime the virus protection does not recognize the .exe and puts up the warning.
+#. Problem with virus protection systems. We have made a request to Norton to have our software "whitelisted". In the meantime the virus protection does not recognize the .exe and puts up the warning.
