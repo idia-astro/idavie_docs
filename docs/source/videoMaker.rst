@@ -45,7 +45,7 @@ The video below showcases a number of viewpoints and methods to move around the 
 
 .. raw:: html
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/1Sv3PxLZML0?si=i41CnJfb8DfZ70cx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/oStTb8cP4Tk?si=sn0aTHAix20jxsn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Summary of Commands
 ^^^^^^^^^^^^^^^^^^^
